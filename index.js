@@ -81,7 +81,7 @@ app.get('/alexa-search/:query', function(req, res) {
         // Pass writer stream to ytdl
         ytdl(url, {
           filter: 'audioonly',
-          quality: '140'
+          quality: '720'
         }).pipe(writer);
 
         // Mark video as downloaded once writer is finished
